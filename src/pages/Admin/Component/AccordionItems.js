@@ -13,6 +13,11 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 import CustomToogle from "./CustomToogle"
 import clsx from "clsx"
 
+const iconStyles = {
+  selectIcon: {
+    color: "green",
+  },
+}
 const useStyle = makeStyles(theme => ({
   root: {
     width: "100%",
@@ -69,11 +74,6 @@ const CustomExpandMore = withStyles(iconStyles)(
   }
 )
 
-const iconStyles = {
-  selectIcon: {
-    color: "green",
-  },
-}
 
 function AccordionItems({ label, isChecked }) {
   const [preTime, setPreTime] = React.useState(2)
